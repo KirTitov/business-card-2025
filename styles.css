@@ -1,0 +1,175 @@
+/* CSS reset */
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-family: "Rubik", serif;
+    font-optical-sizing: auto;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+body {
+    margin: 60px;
+    background-color: #D7D7D7;
+    /*
+    Challenge:
+    Find a web safe font you like, and add it 
+    to your card.
+    */
+    font-family: "Rubik", serif;
+    font-optical-sizing: auto;
+}
+
+.avatar {
+    position: absolute; /* Position relative to the rectangle */
+    bottom: 0; /* Align to the bottom */
+    left: 0; /* Align to the left */
+    width: 254px; /* Adjust the image size as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.card {
+    width: 450px;
+    height: 650px;
+    margin: 0 auto;
+    padding: 48px 32px;
+    /* display: flex;
+    justify-content: space-around; */
+    color: #3D3D3D;
+    border-radius: 16px;
+    background: linear-gradient(to right, white 50%, #0A92BD 50%);
+    box-shadow: 0px 443px 124px 0px rgba(3, 64, 84, 0.00), 0px 284px 114px 0px rgba(3, 64, 84, 0.01), 0px 160px 96px 0px rgba(3, 64, 84, 0.05), 0px 71px 71px 0px rgba(3, 64, 84, 0.09), 0px 18px 39px 0px rgba(3, 64, 84, 0.10);
+    position: relative; 
+    transform: translateY(0); /* Default position */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */      
+    /*
+    Challenge:
+    Find a color palette you like on Coolors.co
+    and use it in your business card.
+     */
+}
+
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 443px 124px 0px rgba(3, 64, 84, 0.01), 0px 284px 114px 0px rgba(3, 64, 84, 0.02), 0px 160px 96px 0px rgba(3, 64, 84, 0.07), 0px 71px 71px 0px rgba(3, 64, 84, 0.12), 0px 18px 39px 0px rgba(3, 64, 84, 0.15);
+}
+
+.heading h1 {
+    text-align: left;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 76px */
+    margin-bottom: 8px;
+    
+}
+
+.heading h2 {
+    text-align: left;
+    font-size: 25px;
+    font-style: normal;
+    font-weight:400;
+    line-height: 100%; /* 31px */
+    
+}
+
+.wrapper {
+    display: flex;
+    align-content: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    height: 100%;
+
+}
+
+.text-wrapper {
+  color: #dddada;
+  display: flex;
+  justify-content:flex-end;
+  z-index: 10;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+
+.border-blue {
+    border: 1px dotted blue;
+}
+
+
+.text-wrapper p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.text-wrapper i {
+    color: #dddada; /* Adjust the color of icons */
+    font-size: 18px; /* Adjust the icon size */
+}
+
+.text-wrapper a {
+  text-decoration: none; /* Remove underline */
+  color: #dddada; /* Default text color */
+  display: flex; /* Align text and icon inline */
+  align-items: center;
+  gap: 10px; /* Spacing between the icon and text */
+  font-size: 16px;
+  transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.text-wrapper a:hover {
+  color: #CD3548; /* Change to your preferred hover color */
+}
+
+.text-wrapper i {
+  font-size: 18px; /* Adjust the size of icons */
+  color: #dddada; /* Default icon color */
+  transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.text-wrapper a:hover i {
+  color: #CD3548; /* Change icon color on hover */
+}
+
+
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
+/*
+Final challenge:
+Download the code to your local computer and place it
+in a folder called "business-card"
+*/
